@@ -24,9 +24,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         print("viewWillAppear called")
     }
     @IBAction func recordAudio(_ sender: Any) {
-        print(configureUI(enableRecording: true))
+       configureUI(enableRecording: true)
         
-
+        
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
