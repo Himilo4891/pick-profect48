@@ -41,7 +41,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func StopRecording(_ sender: AnyObject) {
         print("Stop Recording pressed")
-        print(configureUI(enableRecording: false))
+        configureUI(enableRecording: false)
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
